@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tri A Bulles</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <header class="my-header">
+            <h1>Outils de tri</h1>
+        </header>
+        <main class="my-main">
+            <aside class="my-aside">
+                <nav>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Tri des nombres</a></li>
+                        <li><a href="#">Jeu du pendu</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="my-section" id="mySection">
+                <label for="table"
+                    >Entrez les nombres à trier séparés par des virgules</label
+                >
+                <input
+                    type="text"
+                    id="input"
+                    value=""
+                    placeholder="13, 17, 9, 3"
+                />
+                <button onclick="sortUserInput()">Trier les valeurs.</button>
+                <!-- Pour le script2. js : 
+                <button onclick="triAbulles()">Trier les valeurs.</button>
+                -->
+            </section>
+        </main>
+        <footer class="my-footer">
+            <ul>
+                <li>E-Ickart</li>
+                <li><a href="#">Mentions Légales</a></li>
+                <li><a href="#">2022</a></li>
+            </ul>
+        </footer>
+
+        <script src="script3.js"></script>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Hubballi&display=swap');
+
+/*
+font-family: 'Fredoka', sans-serif;
+font-family: 'Hubballi', cursive;
+*/
+
+body {
+    font-family: 'Hubballi', cursive;
+    display: flex;
+    flex-direction: column;
+    background-color: lightpink;
+}
+
+.my-header {
+    text-align: center;
+    background-color: aqua;
+}
+h1 {
+    font-family: 'Fredoka', sans-serif;
+}
+
+.my-main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+.my-aside {
+    background-color: yellowgreen;
+}
+
+.my-aside ul {
+    padding: 0px 20px;
+}
+
+.my-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 10px;
+    padding: 15px;
+    background-color: lightcoral;
+}
+
+.my-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: burlywood;
+}
+
+.my-footer ul {
+    text-align: center;
+    padding: 0;
+}
+ul li {
+    list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+    .my-main {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .my-aside {
+        width: 20%;
+    }
+
+    .my-section {
+        width: 75%;
+        padding: 15px 10px;
+        row-gap: 20px;
+    }
+}

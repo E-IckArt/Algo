@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le tri par insertion</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Le tri par insertion</h1>
+      <p>
+        Cet algorithme est très efficace sur des tableaux de petite taille (50
+        données max), dont les données partiellement triées.
+      </p>
+    </header>
+    <main>
+      <section>
+        <h2>Le pseudo-code de l'algo de tri</h2>
+        <div class="div__code">
+        <p>
+          <code>
+            Pseudo-code Variable tab[] en Entier <br />
+            Variable elementActuel en Entier
+            <br />
+            Variable i, j en Entier
+          </code>
+        </p>
+        <p>
+          <code>
+            Pour i de 1 à longueur du tableau -1
+            <br />
+            <span class="code__span--tab">elementActuel = tab[i] j = i</span>
+            <br />
+            <span class="code__span--tab"
+              >Tant que tab[j-1] > elementActuel ET j>0:</span
+            >
+            <br /><span class="code__span--tab code__span--tabtab"></span>
+              tab[j] = tab[j-1]</span
+            >
+            <br />
+            <span class="code__span--tab code__span--tabtab"
+              >j = j-1</span>
+            <br />
+            <span class="code__span--tab"
+              >
+            tab[j] = elementActuel</span>
+            <br />
+          </code>
+        </p>
+        <p>
+          <code>
+            i suivant
+            <br />
+            Fin pour
+          </code>
+        </p>
+    </div>
+    </section>
+    <section>
+        <h2>Les exemples</h2>
+        <ul>
+          <li>Exemple en Python</li>
+          <li>Exemple en Php</li>
+          <li>Exemple en JavaScript</li>
+        </ul>
+      </section>
+      <section>
+          <h2>Le replay du live du 17/03/2022</h2>
+          <a href="https://app.studi.fr/#/dashboard/events/26198/details" target="_blank">
+            Voir le Replay
+            </a>
+      </section>
+    </main>
+    <footer>
+      <p>E-Ickart</p>
+      <p>- Mars 2022 -</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

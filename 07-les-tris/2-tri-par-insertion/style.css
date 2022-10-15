@@ -1,0 +1,51 @@
+html {
+    background-color: rgba(255, 235, 205, 0.788);
+}
+
+body {
+    background-color: rgb(255, 235, 205);
+    width: 70vw;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px 4px white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header,
+main,
+footer {
+    margin: 0px 30px 5px 30px;
+}
+
+header {
+    text-align: center;
+}
+
+.code__span--tab {
+    margin-left: 2em;
+}
+
+.code__span--tab.code__span--tabtab {
+    margin-left: 4em;
+}
+
+.div__code {
+    margin: 0 20px;
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 0 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0.2em;
+}

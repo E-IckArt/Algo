@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Algo - La récursivité</title>
+    </head>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous"
+    />
+    <body>
+        <header class="container-lg my-5">
+            <div class="row">
+                <nav
+                    class="navbar navbar-light bg-light rounded-3"
+                    aria-labelledby="barre de navigation"
+                >
+                    <div class="container-fluid">
+                        <a class="navbar-brand fs-1" href="#">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-pen-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z"
+                                />
+                            </svg>
+                            Suite des fondamentaux - La récursivité
+                        </a>
+                    </div>
+                </nav>
+
+                <div class="col"></div>
+            </div>
+        </header>
+
+        <main class="container-lg my-5">
+            <section class="row">
+                <div class="col">
+                    <!-- START : Accordion-->
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button fs-4 collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Principe de la récursivité
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseOne"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    <figure
+                                        class="figure shadow-sm p-3 mb-5 bg-body rounded"
+                                    >
+                                        <img
+                                            class="figure-img img-fluid rounded mx-auto"
+                                            src="assets/01.png"
+                                            alt=""
+                                        />
+                                        <figcaption class="figure-caption">
+                                            Le principe de récursivité en
+                                            pseudo-code
+                                        </figcaption>
+                                    </figure>
+                                    <p class="lead">
+                                        Toute fonction qui peut-être créer de
+                                        manière itérative (avec une boucle) peut
+                                        l'être aussi grâce à la récursivité.
+                                    </p>
+                                    <figure
+                                        class="figure shadow-sm p-3 mb-5 bg-body rounded"
+                                    >
+                                        <img
+                                            class="figure-img img-fluid rounded mx-auto"
+                                            src="assets/02.png"
+                                            alt="schéma récursif Vs schéma itératif"
+                                        />
+                                        <figcaption class="figure-caption">
+                                            schéma récursif Vs schéma itératif
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button
+                                    class="accordion-button fs-4 collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="collapseTwo"
+                                >
+                                    Exemple 1 - Countdown
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseTwo"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    <figure
+                                        class="figure shadow-sm p-3 mb-5 bg-body rounded"
+                                    >
+                                        <img
+                                            class="figure-img img-fluid rounded mx-auto"
+                                            src="assets/03.png"
+                                            alt=""
+                                        />
+                                        <figcaption class="figure-caption">
+                                            PseudoCode - Version Itérative
+                                        </figcaption>
+                                    </figure>
+                                    <figure
+                                        class="figure shadow-sm p-3 mb-5 bg-body rounded"
+                                    >
+                                        <img
+                                            class="figure-img img-fluid rounded mx-auto"
+                                            src="assets/04.png"
+                                            alt=""
+                                        />
+                                        <figcaption class="figure-caption">
+                                            Code - Version Itérative
+                                        </figcaption>
+                                    </figure>
+                                    <figure
+                                        class="figure shadow-sm p-3 mb-5 bg-body rounded"
+                                    >
+                                        <img
+                                            class="figure-img img-fluid rounded mx-auto"
+                                            src="assets/05.png"
+                                            alt=""
+                                        />
+                                        <figcaption class="figure-caption">
+                                            Pseudo code - Version Récursive
+                                        </figcaption>
+                                    </figure>
+                                    <figure
+                                        class="figure shadow-sm p-3 mb-5 bg-body rounded"
+                                    >
+                                        <img
+                                            class="figure-img img-fluid rounded mx-auto"
+                                            src="assets/06.png"
+                                            alt=""
+                                        />
+                                        <figcaption class="figure-caption">
+                                            Code - Version Récursive
+                                        </figcaption>
+                                    </figure>
+
+                                    <h3>La pile d'éxecution</h3>
+
+                                    <figure
+                                        class="figure shadow-sm p-3 mb-5 bg-body rounded"
+                                    >
+                                        <img
+                                            class="figure-img img-fluid rounded mx-auto"
+                                            src="assets/07.png"
+                                            alt=""
+                                        />
+                                        <figcaption class="figure-caption">
+                                            Pile d'exécution au cours de
+                                            l'exécution d'une fonction récursive
+                                        </figcaption>
+                                    </figure>
+                                    <figure
+                                        class="figure shadow-sm p-3 mb-5 bg-body rounded"
+                                    >
+                                        <img
+                                            class="figure-img img-fluid rounded mx-auto"
+                                            src="assets/08.png"
+                                            alt=""
+                                        />
+                                        <figcaption class="figure-caption">
+                                            Pile d'exécution après l'exécution
+                                            d'une fonction récursive
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button
+                                    class="accordion-button fs-4 collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree"
+                                    aria-expanded="false"
+                                    aria-controls="collapseThree"
+                                >
+                                    Dans quel cas utiliser une fonction
+                                    récursive plutôt qu'une boucle ?
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseThree"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    <figure
+                                        class="figure shadow-sm p-3 mb-5 bg-body rounded"
+                                    >
+                                        <img
+                                            class="figure-img img-fluid rounded mx-auto"
+                                            src="assets/09.png"
+                                            alt="cas d'usages"
+                                        />
+                                        <figcaption class="figure-caption">
+                                            Pour les algorithmes complexes il
+                                            faut privilégier l'utilisation des
+                                            fonctions récursives
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button
+                                    class="accordion-button fs-4 collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour"
+                                    aria-expanded="false"
+                                    aria-controls="collapseFour"
+                                >
+                                    Exemple 2 - La factorielle d'un nombre
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseFour"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    <figure
+                                        class="figure shadow-sm p-3 mb-5 bg-body rounded"
+                                    >
+                                        <img
+                                            class="figure-img img-fluid rounded mx-auto"
+                                            src="assets/11.png"
+                                            alt=""
+                                        />
+                                        <figcaption class="figure-caption">
+                                            PseudoCode - Version Itérative
+                                        </figcaption>
+                                    </figure>
+                                    <figure
+                                        class="figure shadow-sm p-3 mb-5 bg-body rounded"
+                                    >
+                                        <img
+                                            class="figure-img img-fluid rounded mx-auto"
+                                            src="assets/10.png"
+                                            alt=""
+                                        />
+                                        <figcaption class="figure-caption">
+                                            Code - Version Itérative
+                                        </figcaption>
+                                    </figure>
+
+                                    <figure
+                                        class="figure shadow-sm p-3 mb-5 bg-body rounded"
+                                    >
+                                        <img
+                                            class="figure-img img-fluid rounded mx-auto"
+                                            src="assets/12.png"
+                                            alt=""
+                                        />
+                                        <figcaption class="figure-caption">
+                                            PeudoCode - Version Recursive
+                                        </figcaption>
+                                    </figure>
+                                    <figure
+                                        class="figure shadow-sm p-3 mb-5 bg-body rounded"
+                                    >
+                                        <img
+                                            class="figure-img img-fluid rounded mx-auto"
+                                            src="assets/14.png"
+                                            alt=""
+                                        />
+                                        <figcaption class="figure-caption">
+                                            Pile d'appel - Au début de
+                                            l'éxécution du programme
+                                        </figcaption>
+                                    </figure>
+                                    <figure
+                                        class="figure shadow-sm p-3 mb-5 bg-body rounded"
+                                    >
+                                        <img
+                                            class="figure-img img-fluid rounded mx-auto"
+                                            src="assets/15.png"
+                                            alt=""
+                                        />
+                                        <figcaption class="figure-caption">
+                                            Pile d'appel - A la fin de
+                                            l'éxécution du programme
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- END : Accordion-->
+                </div>
+            </section>
+        </main>
+        <footer class="container">
+            <div class="row">
+                <div class="col"></div>
+            </div>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"
+        ></script>
+        <script src="app.js"></script>
+        <script src="factorielle.js"></script>
+        <noscript
+            >Le javascript de votre navigateur est désactivé. Activez le pour
+            une meilleure expérience sur notre site</noscript
+        >
+    </body>
+</html>

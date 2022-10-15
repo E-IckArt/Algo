@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Algo - 4 - Ouvrir, lire et fermer un fichier</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <header>
+            <h1>
+                Comment stocker des données sans utiliser MySQL ou autre SGBD ?
+            </h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>Deux types de fichiers</h2>
+                <p>
+                    Il existe <strong>deux types de fichiers</strong> que l'on
+                    peut utiliser pour stocker un petit nombre de données
+                    simplement afin de tester un programme.<br />
+                    Cela permet d'éviter de demander à l'utilisateur de rentrer
+                    les données, mais également la création de variables pour
+                    travailler avec des données tests.
+                </p>
+                <ul>
+                    <li>
+                        les fichiers <span>.txt </span>: que l'on peut lire.
+                    </li>
+                    <li>
+                        les fichiers <span>.bin </span> : dont la syntaxe n'est
+                        pas compréhensible par l'humain.
+                    </li>
+                </ul>
+                <p>
+                    On peut créer un fichier <span>.csv</span>, y écrire les
+                    données, enregistrer et fermer, puis ouvrir ce fichier avec
+                    Excel. Les données seront enregistrées dans une feuille du
+                    tableur. Il est possible de modifier les données dans Excel.
+                </p>
+                <img
+                    class="section__img"
+                    src="img\exemple de données à stocker.png"
+                    alt="schéma : exemple de données"
+                />
+            </section>
+            <section>
+                <h2>Différents types d'accès</h2>
+                <img
+                    class="section__img"
+                    src="img\typesdAcces.png"
+                    alt="Types d'accès"
+                />
+                <img
+                    class="section__img"
+                    src="img\typedeDroits.png"
+                    alt="Types de droits"
+                />
+            </section>
+            <section>
+                <h2>Ouvrir, lire et fermer un fichier</h2>
+                <h3>Exemple en pseudo-code</h3>
+                <img
+                    class="section__img"
+                    src="img\ouvrirEtFermerUnFichier.png"
+                    alt="Exemple en pseudo-code"
+                />
+                <img
+                    class="section__img"
+                    src="img\LireUnFichierEnAccesSequentiel.png"
+                    alt=""
+                />
+                <p>EOF = End Of File</p>
+                <p>
+                    Le protocole HTTP ne permet pas de lire les fichiers
+                    directement sur l'ordinateur. <br />
+                    On ne peut donc pas utiliser le javascript tel qu'on l'a
+                    utilisé jusqu'à présent : côté front-end.<br />
+                    On peut utiliser du JavaScript côté serveur : avec
+                    <span>Node.js</span>.
+                </p>
+                <p>
+                    Pour l'exemple on utilisera les langages
+                    <span>Python</span> et <span>PHP</span>.
+                </p>
+            </section>
+            <section>
+                <h2>Exercices d'application</h2>
+                <p class="section__p--italic">Voir les fichiers .php et .py</p>
+                <ul>
+                    <li>Exo 1 - Todo - Renvoyer les infos d'un fichier</li>
+                    <ul>
+                        <li>Exemple en PHP :</li>
+                        <li>Exemple en Python</li>
+                    </ul>
+                </ul>
+
+                <ul>
+                    <li>
+                        Exo 2 - People - Renvoyer les infos d'un fichier sous
+                        forme de tableau
+                    </li>
+
+                    <ul>
+                        <li>Exemple en PHP</li>
+                        <li>Exemple en Python</li>
+                    </ul>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+html {
+    background-color: rgba(248, 238, 225, 0.7);
+}
+
+body {
+    background-color: antiquewhite;
+    width: 80vw;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header,
+main {
+    margin: 16px 15px;
+}
+
+section {
+    display: block;
+}
+
+span {
+    font-weight: 600;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.2rem;
+}
+
+.section__p--italic {
+    font-style: italic;
+}
+
+.section__img {
+    max-width: 600px;
+    border-radius: 15px;
+    margin: 15px 0;
+}

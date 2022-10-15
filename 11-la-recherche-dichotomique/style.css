@@ -1,0 +1,24 @@
+/* Reset */
+
+/* Body */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ressources a {
+    text-decoration: none;
+    color: blue;
+    background-color: lightblue;
+}
+
+/* Footer */
+
+.live__infos {
+    color: indigo;
+    font-weight: 500;
+    list-style: none;
+}
+
+.live__infos ul {
+    list-style: none;
+}

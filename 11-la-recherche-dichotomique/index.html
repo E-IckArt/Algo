@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Algo - La recherche dichotomique</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Algo - La recherche dichotomique</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Méthode</h2>
+                <p>Soit un tabeau de 6 valeurs : [3, 7, 11, 15, 22, 37]</p>
+                <p>Dans ce tableau on recherche une valeur précise : 22.</p>
+                <ol>
+                    Etapes :
+                    <li>
+                        Trouver la position la plus centrale du tableau (si le
+                        tableau est vide, sortir) : tab.length/2
+                    </li>
+                    <li>Récupérer la partie entière : mil = 15</li>
+                    <li>
+                        Si la valeur est égale à l'élément, alors retourner la
+                        position, sinon reprendre la procédure dans la moitié de
+                        tableau pertinente.
+                    </li>
+                    <img src="assets/1.png" alt="" />
+                </ol>
+                <p>
+                    On peut toujours se ramener à une moitié de tableau sur un
+                    tableau trié en ordre croissant. Si la valeur de la case est
+                    plus petite que l'élément, on continuera sur la moitié
+                    droite, c'est-à-dire sur la partie du tableau qui contient
+                    des nombres plus grands que la valeur de la case. Sinon, on
+                    continuera sur la moitié gauche.
+                </p>
+            </section>
+            <section>
+                <h2>
+                    Deux version pour l'algorithme de recherche dichotomique
+                </h2>
+                <h3>Version itérative</h3>
+                <img src="assets/2.png" alt="" />
+                <h3>Version récursive</h3>
+                <img src="assets/4.png" alt="" />
+            </section>
+            <section class="ressources">
+                <h3>Liens utiles</h3>
+                <a href="https://fr.wikipedia.org/wiki/Recherche_dichotomique"
+                    >Recherche dichotomique - wikipedia</a
+                >
+            </section>
+        </main>
+        <footer class="live__infos">
+            <ul class="live__infos--list">
+                <li>Live J-B Lavisse</li>
+                <li>Série Suite des fondamentaux d'algo</li>
+                <li>20/04/2022</li>
+            </ul>
+        </footer>
+    </body>
+</html>

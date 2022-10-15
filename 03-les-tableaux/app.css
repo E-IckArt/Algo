@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    font-family: 'Indie Flower', cursive, sans serif;
+    line-height: 2rem;
+}
+h1 {
+    color: rgb(117, 8, 163);
+    text-align: center;
+    text-shadow: 2px 2px deeppink;
+    text-decoration: underline;
+}
+p {
+    color: rgb(236, 34, 236);
+    font-size: 1.5rem;
+}
+
+img {
+    width: auto;
+    height: 50%;
+    border: fuchsia solid 2px;
+    border-radius: 10px;
+}
